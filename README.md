@@ -156,7 +156,7 @@ Q16: Three shell commands:
 
 Q17: In xv6, the process synchronisation occurs with the help of locks. It is essential to have a process synchronization mechanism so that memory consistency can be maintained by avoiding race conditions etc, and to avoid deadlock conditions. 
 
-Q18: 
+Q18: When an interrupt occurs, the processor execution of current program is stopped and an interrupt handler begins execution. This handler is responsible for dealing and resolving the interrupt. Once this is over, the program again starts (if it has not been terminated). Its register values are saved at the time of interrupt, so that these can be restored at this instant.
 
 Q19: xv6 has no implementation of a virtual memory.
 
