@@ -142,7 +142,14 @@ Q11: - c. MIT
 
 
 Q12: 
+1.UNUSED:- not being used (waiting to initialise or already terminated)
+2.EMBRYO:- newly created and is still being set up (hardware allocation)
+3.SLEEPING:- waiting for an event to occur (time passing,signal,or I/O operations)
+4.RUNNABLE:- ready to execute but waiting for the CPU to be free
+5.RUNNING:- executing on cpu
+6.ZOMBIE:- completed execution - waiting for the parent to collect exit status before being terminated
 
+   
 Q13: The xv6 operating system implements a 6 layered file system. The lowest layer is responsible for writing/reading data from the secondary memory, whereas the highest layer provides interfaces to be used by other high level programs.
 
 Q14: A system call is when the program makes a request to the kernel to directly access some memory or hardware resources, or get some other information about the system. A library call means using a function which is provided by some library. The functions might invoke some system calls, but a programmer interacts with the abstracted library function only. For example, **fork()** is a system call, whereas **printf() (or cprintf() )** is a library call.
