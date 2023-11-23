@@ -117,3 +117,37 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+
+Q1: - b. A Unix-like operating system
+Q2: - b. Linux
+Q3: - d. simple
+Q4: - b. As interrupts
+Q5: - b. 256
+Q6: - c. Sh
+Q7: - a. Round-robin scheduling
+Q8: - a. Paging
+Q9: - d. Both b and c
+Q10: - b. No
+Q11: - c. MIT
+
+
+Q12: 
+
+Q13: The xv6 operating system implements a 6 layered file system. The lowest layer is responsible for writing/reading data from the secondary memory, whereas the highest layer provides interfaces to be used by other high level programs.
+
+Q14: A system call is when the program makes a request to the kernel to directly access some memory or hardware resources, or get some other information about the system. A library call means using a function which is provided by some library. The functions might invoke some system calls, but a programmer interacts with the abstracted library function only. For example, **fork()** is a system call, whereas **printf() (or cprintf() )** is a library call.
+
+Q15: In xv6, paging is used for memory management. xv6 uses 32 bit VA, so memory size can go upto 4GB. A page size of 4KB is maintained, and a 2 level page table is used. Paging helps in non-contiguous memory allocation, by dividing memory into frames and programs into pages of equal sizes.
+
+Q16: Three shell commands:
+   1. ls - shows files in a directory
+   2. echo - prints on shell
+   3. grep - find some text in file
+
+Q17: In xv6, the process synchronisation occurs with the help of locks. It is essential to have a process synchronization mechanism so that memory consistency can be maintained by avoiding race conditions etc, and to avoid deadlock conditions. 
+
+Q18: 
+
+Q19: xv6 has no implementation of a virtual memory.
+
+Q20: 
